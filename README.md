@@ -3,7 +3,11 @@
 
 This guide provides step-by-step instructions to set up and manage Kafka streaming using Python. It covers initializing the required services, creating topics, and leveraging Python libraries for producing and consuming messages in Kafka.
 
----
+
+### Install 
+1. Download and install [Java version 8](https://www.java.com/pt-BR/download/ie_manual.jsp?locale=pt_BR)
+2. Download and install [Kafka](https://kafka.apache.org/downloads) 
+
 
 ## 1. Initialize Zookeeper
 Zookeeper is an essential service for managing and coordinating the Kafka cluster. To start Zookeeper:
@@ -33,13 +37,13 @@ Topics are fundamental in Kafka as they define the channels through which data f
 To create a topic, use the create_topic function defined in the following script:
 [tools/kafka_tools.py](tools/kafka_tools.py)
 
-## 4. Create a Consumer for the messages
+## 4. Create a Consumer to receive messages
 A Kafka consumer listens for messages sent to a specific topic and processes them accordingly.
 
 Example Kafka Consumer:
 [streaming/kafka_consumer.py](streaming/kafka_consumer.py)
 
-## 5. Create a Kafka Producer
+## 5. Create a Producer to send messages
 A Kafka producer is responsible for sending messages to a specific topic. The producer is created using the confluent-kafka Python library.
 
 Example Kafka Producer:
