@@ -1,4 +1,4 @@
-# Kafka_Streamer
+# Kafka Streamer
 ### Streaming Manipulation with Kafka via Python
 
 This guide provides step-by-step instructions to set up and manage Kafka streaming using Python. It covers initializing the required services, creating topics, and leveraging Python libraries for producing and consuming messages in Kafka.
